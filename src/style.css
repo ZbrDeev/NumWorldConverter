@@ -1,0 +1,24 @@
+body{
+  background: #EBF9F9;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 80%;
+}
+
+.input > * {
+  width: 100%;
+  outline: none;
+}
+
+.input > *::placeholder{
+  color: #000000;
+}
