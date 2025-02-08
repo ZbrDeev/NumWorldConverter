@@ -49,3 +49,23 @@ binaryInput.addEventListener("input", (e) => {
   stringInput.value = binaryToString(value)
 
 })
+
+stringInput.addEventListener("input", (e) => {
+  const {value} = e.srcElement
+
+  decimalValue = ""
+  binaryValue = ""
+  hexValue = ""
+
+  for(let i = 0; i < value.length; i++){
+    const number = value.charCodeAt(i)
+
+    decimalValue += number.toString() + " "
+    binaryValue += number.toString(2) + " "
+    hexValue += number.toString(16) + " "
+  }
+
+  decimalInput.value = decimalValue
+  binaryInput.value = binaryValue
+  hexInput.value = hexValue
+})
