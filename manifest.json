@@ -1,8 +1,12 @@
 {
   "manifest_version": 2,
-  "name": "NumWorldConverter",
+  "name": "Num World Converter",
   "version": "1.0.0",
   "description": "An extension to convert everything into everything",
+    "icons": {
+    "48": "img/logo-48.png",
+    "128": "img/logo-128.png"
+  },
 
   "browser_action": {
     "default_popup": "src/index.html"
